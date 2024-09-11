@@ -21,10 +21,6 @@ public class ChooseFirstProductTask implements Task {
         actor.attemptsTo(WaitUntil.the(FIRST_PRODUCT, isEnabled()).forNoMoreThan(TIME_SHORT).seconds(), Click.on(FIRST_PRODUCT));
         actor.attemptsTo(WaitUntil.the(BTN_SUBMIT, isEnabled()).forNoMoreThan(TIME_SHORT).seconds(), Click.on(BTN_SUBMIT));
         waitting(TIME_SHORT);
-
-        //actor.attemptsTo(WaitUntil.the(INPUT_QUANTITY, isEnabled()).forNoMoreThan(TIME_SHORT).seconds(), Enter.theValue("2").into(INPUT_QUANTITY));
-        //actor.attemptsTo(WaitUntil.the(BTN_SUBMIT, isEnabled()).forNoMoreThan(TIME_SHORT).seconds(), Click.on(BTN_SUBMIT));
-        //waitting(TIME_SHORT);
     }
 
     public static ChooseFirstProductTask choose() {

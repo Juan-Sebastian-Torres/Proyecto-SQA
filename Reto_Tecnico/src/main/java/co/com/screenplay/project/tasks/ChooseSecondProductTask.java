@@ -4,13 +4,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.screenplay.project.ui.HomeProductUI.*;
 import static co.com.screenplay.project.ui.HomeUI.*;
-import static co.com.screenplay.project.ui.HomeUI.FIRST_PRODUCT;
 import static co.com.screenplay.project.utils.Constants.TIME_SHORT;
 import static co.com.screenplay.project.utils.Time.waitting;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;

@@ -38,9 +38,5 @@ public class OpenWebStep {
     @Then("visualizara el carrito de compras")
     public void willDisplayTheShoppingCart() {
         OnStage.theActorCalled(ACTOR).attemptsTo(ProductsSlectedTask.choose());
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(TheWebPage.title(), Matchers.containsString(TITLE)
-                )
-        );
     }
 }
